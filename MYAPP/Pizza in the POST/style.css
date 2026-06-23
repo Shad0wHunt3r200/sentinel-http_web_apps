@@ -1,0 +1,36 @@
+label {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #000000;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Target all <select> elements */
+select {
+  width: 40%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: rgb(255, 170, 0);
+}
+
+body {
+    background-color: gold;
+}

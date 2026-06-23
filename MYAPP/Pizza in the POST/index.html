@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Pizza Order Form</title>
+
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Pizza Order Form</h1>
+    <form action="/order" method="POST">
+      <label for="size">Size:</label>
+
+      <select name="size" id="size" required>
+
+        <option value="s">Small ($10)</option>
+        <option value="l">Large ($15)</option>
+        <option value="xl">Extra Large ($18)</option>
+
+      </select>
+
+      <br /><br />
+ 
+      <label for="topping1">Topping 1:</label>
+
+      <select name="topping1" id="topping1">
+
+        <option value="">None</option>
+        <option value="Onion">Onion ($2)</option>
+        <option value="Tempeh">Tempeh ($2)</option>
+        <option value="Olives">Olives ($2)</option>
+        <option value="Pineapple">Pineapple ($2)</option>
+
+      </select>
+
+      <br /><br />
+ 
+      <label for="topping2">Topping 2:</label>
+
+      <select name="topping2" id="topping2">
+
+        <option value="">None</option>
+        <option value="Onion">Onion ($2)</option>
+        <option value="Tempeh">Tempeh ($2)</option>
+        <option value="Olives">Olives ($2)</option>
+        <option value="Pineapple">Pineapple ($2)</option>
+
+
+      </select>
+
+      <br /><br />
+ 
+      <label for="extra_cheese">Extra Cheese (+ $1.50):</label>
+      <input type="checkbox" name="extra_cheese" value="1" />
+
+      <br /><br />
+ 
+      <label for="cheese_crust">Cheese Crust (+ $2.50):</label>
+      <input type="checkbox" name="cheese_crust" value="1" />
+      
+      <br /><br />
+ 
+      <button type="submit">Order Pizza</button>
+    </form>
+  </body>
+</html>

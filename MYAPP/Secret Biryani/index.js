@@ -7,7 +7,15 @@ app.get('/', (req, res) => {
 });
 
 app.get('/secret', (req, res) => {
-    const secret = req.query.secret
+    const secret = req.query.secret;
 
-    
+    if (secret == 'Biryani') {
+        res.send('Yum!');
+    } else {
+        res.sendStatus(404);
+    };
 });
+
+app.listen(PORT, () => {
+    console.log(`App is listening on port ${PORT}`);
+})
