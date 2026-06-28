@@ -1,0 +1,9 @@
+<div class="social-media-buttons">    
+    <button class="fb">Facebook</button>    
+    <button class="ig">Instagram</button>    
+    <button class="tw">Twitter</button>
+</div>
+
+<% for (platform of social) { %>
+    <button class="<%= platform.class %>"><%= 
+platform.title %></button><% } %>
